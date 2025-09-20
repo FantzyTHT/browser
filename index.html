@@ -29,7 +29,7 @@
             const formattedURL = url.startsWith('http://') || url.startsWith('https://') ? url : 'https://' + url;
 
             // Fetch content from the Netlify serverless function
-            fetch(`https://your-site.netlify.app/.netlify/functions/proxy?url=${encodeURIComponent(formattedURL)}`)
+            fetch(`https://fantzy-browser.netlify.app/.netlify/functions/proxy?url=${encodeURIComponent(formattedURL)}`)
                 .then(response => response.json())
                 .then(data => {
                     // You can display the content inside the iframe or handle it otherwise
